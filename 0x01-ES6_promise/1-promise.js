@@ -1,4 +1,4 @@
-export default function getFullResponseFromAPI(success) {
+e xport default function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     if (success) {
       resolve({
