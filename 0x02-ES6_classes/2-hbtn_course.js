@@ -31,7 +31,7 @@ export default class HolbertonCourse {
     if (students instanceof Array) {
       this._students = students;
     } else {
-      throw new TypeError('students must be an array of strings');
+      throw new TypeError('Students must be an Array');
     }
   }
 
