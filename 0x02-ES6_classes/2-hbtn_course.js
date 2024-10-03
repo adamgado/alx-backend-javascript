@@ -40,9 +40,9 @@ class HolbertonCourse {
       ) {
         this._students = students;
       } else {
-        throw new TypeError('students must be an array');
+        throw new TypeError('Students must be an array of strings');
       }
     }
   }
-
+  
   export default HolbertonCourse;
