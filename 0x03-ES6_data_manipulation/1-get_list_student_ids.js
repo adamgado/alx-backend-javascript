@@ -5,5 +5,3 @@ export default function getListStudentIds(studentlist) {
   }
   return idlist;
 }
-
-export default getListStudentIds;
