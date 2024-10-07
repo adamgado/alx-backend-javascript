@@ -1,10 +1,16 @@
-export default function updateStudentGradeByCity(studentlist, city, grades) {
-  const citystudents = studentlist.filter((a) => a.location === city);
+export default function updateStudentGradeByCity(
+  students,
+  city,
+  newGrades,
+) {
+  const filterStudents = students.filter(
+    (student) => student.location === city,
+  );
 
-  const gradestudents = citystudents.map(
+  const gradeStudents = filterStudents.map(
     (student) => {
-      for (const gradeInfo of grades) {
-        if (studnet.id === gradeInfo.studentId) {
+      for (const gradeInfo of newGrades) {
+        if (student.id === gradeInfo.studentId) {
           student.grade = gradeInfo.grade;
         }
       }
@@ -15,5 +21,5 @@ export default function updateStudentGradeByCity(studentlist, city, grades) {
     },
   );
 
-  return gradestudents;
+  return gradeStudents;
 }
