@@ -1,9 +1,9 @@
-function getListStudentIds(student_list) {
-  let id_list = [];
-  if (student_list instanceof Array) {
-    id_list = student_list.map((item) => item.id);
+export default function getListStudentIds(studentlist) {
+  let idlist = [];
+  if (studentlist instanceof Array) {
+    idlist = studentlist.map((item) => item.id);
   }
-  return id_list;
+  return idlist;
 }
 
 export default getListStudentIds;
