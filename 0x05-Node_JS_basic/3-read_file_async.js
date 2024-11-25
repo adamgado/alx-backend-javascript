@@ -15,7 +15,7 @@ function countStudents(path) {
       const studentsnumber = studentslist.length ? studentslist.length - 1 : 0;
       message = `Number of students: ${studentsnumber}`;
       console.log(message);
-      response.push(message);
+      res.push(message);
       const fields = {};
       for (const a in studentslist) {
         if (a !== 0) {
@@ -25,7 +25,7 @@ function countStudents(path) {
       }
       delete fields.field;
       for (const k of Object.keys(fields)) {
-        message = `Number of students in ${key}: ${fields[k].length}. List: ${fields[k].join(', ')}`;
+        message = `Number of students in ${k}: ${fields[k].length}. List: ${fields[k].join(', ')}`;
         console.log(message);
         res.push(message);
       }
