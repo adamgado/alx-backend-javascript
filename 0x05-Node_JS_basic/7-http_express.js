@@ -6,12 +6,12 @@ app.get('/', (req, res) => {
   res.send('Hello Holberton School!');
 });
 app.get('/students', async (req, res) => {
-  const message = 'This is the list of our students\n';
+  const msg = 'This is the list of our students\n';
   try {
     const studentslist = await studentcount(process.argv.slice(2)[0]);
-    res.send(`${message}${studentslist.join('\n')}`);
+    res.send(`${msg}${studentslist.join('\n')}`);
   } catch (error) {
-    res.send(`${message}${error.message}`);
+    res.send(`${msg}${error.message}`);
   }
 });
 app.listen(1245, () => {});
