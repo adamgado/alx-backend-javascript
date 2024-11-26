@@ -5,4 +5,5 @@ const app = express();
 
 controllerRouting(app);
 app.listen(1245, () => {});
+
 export default app;
